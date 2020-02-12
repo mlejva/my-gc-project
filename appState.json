@@ -1,0 +1,136 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "30667ecc-2b21-43a3-88ee-9095d1f50b60": {
+        "id": "30667ecc-2b21-43a3-88ee-9095d1f50b60",
+        "parent": null,
+        "name": "my-gc-project",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "4f363080-457d-47b2-86e4-1624b59f3ed8",
+          "11e6f6ee-4a92-43b5-829f-524dc925560e"
+        ],
+        "isRemovable": false,
+        "filePath": "my-gc-project"
+      },
+      "4f363080-457d-47b2-86e4-1624b59f3ed8": {
+        "id": "4f363080-457d-47b2-86e4-1624b59f3ed8",
+        "parent": "30667ecc-2b21-43a3-88ee-9095d1f50b60",
+        "name": "function.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "my-gc-project/function.js",
+        "config": {
+          "runtime": "nodejs8",
+          "timeout": 60,
+          "memory": 128,
+          "triggerType": 0,
+          "handler": "handler"
+        },
+        "triggers": [
+          {
+            "resourceName": "http-trigger",
+            "config": {}
+          }
+        ],
+        "testCases": {
+          "da6f235b-c2ba-45f1-a4ee-6502ebb351be": {
+            "id": "da6f235b-c2ba-45f1-a4ee-6502ebb351be",
+            "name": "Test event",
+            "functionId": "4f363080-457d-47b2-86e4-1624b59f3ed8",
+            "event": "{\n    \"key1\": \"value1\",\n    \"key2\": \"value2\",\n    \"key3\": \"value3\"\n}",
+            "eventTemplate": "hello-world"
+          }
+        }
+      },
+      "adc36a46-d76e-477c-990e-ad7dda0d309c": {
+        "id": "adc36a46-d76e-477c-990e-ad7dda0d309c",
+        "parent": null,
+        "name": "index.js",
+        "type": "JS_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": false,
+        "filePath": "index.js"
+      },
+      "e1279e06-15a3-425e-8174-a1510831149b": {
+        "id": "e1279e06-15a3-425e-8174-a1510831149b",
+        "parent": null,
+        "name": "main.py",
+        "type": "PYTHON_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": false,
+        "filePath": "main.py"
+      },
+      "11e6f6ee-4a92-43b5-829f-524dc925560e": {
+        "id": "11e6f6ee-4a92-43b5-829f-524dc925560e",
+        "parent": "30667ecc-2b21-43a3-88ee-9095d1f50b60",
+        "name": "Authorizer.js",
+        "type": "JS_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "my-gc-project/Authorizer.js"
+      }
+    },
+    "rootNode": "30667ecc-2b21-43a3-88ee-9095d1f50b60",
+    "openFiles": [
+      "4f363080-457d-47b2-86e4-1624b59f3ed8"
+    ],
+    "currentFileId": "4f363080-457d-47b2-86e4-1624b59f3ed8",
+    "resources": {
+      "http-trigger": {
+        "name": "http-trigger",
+        "type": "http-trigger",
+        "config": {}
+      },
+      "datastore": {
+        "name": "datastore",
+        "type": "CloudDatastore",
+        "config": {}
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [],
+    "packageJSON": {
+      "dependencies": {
+        "googleapis": {
+          "name": "googleapis",
+          "language": "javascript",
+          "version": "29.0.0",
+          "dev": false,
+          "notRemovable": false
+        },
+        "firebase": {
+          "name": "firebase",
+          "version": "7.8.1",
+          "dev": false,
+          "language": "javascript"
+        }
+      }
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "my-gc-project",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "europe-west1",
+    "platform": "GCP",
+    "platformRegions": {},
+    "lastSave": 1581500352860
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "my-gc-project",
+      "url": "https://github.com/mlejva/my-gc-project"
+    }
+  }
+}
